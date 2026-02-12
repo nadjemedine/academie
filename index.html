@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap');
-        
+
         :root {
             --brand-green: #2D5A27;
             --brand-beige: #F5F5DC;
@@ -22,18 +23,25 @@
             scroll-behavior: smooth;
         }
 
-        .bg-brand-green { background-color: var(--brand-green); }
-        .text-brand-green { color: var(--brand-green); }
+        .bg-brand-green {
+            background-color: var(--brand-green);
+        }
+
+        .text-brand-green {
+            color: var(--brand-green);
+        }
+
         .btn-primary {
             background-color: var(--brand-green);
             color: white;
             transition: all 0.3s ease;
         }
+
         .btn-primary:hover {
             background-color: #1e3d1a;
             transform: translateY(-2px);
         }
-        
+
         .glass-card {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(10px);
@@ -46,22 +54,27 @@
             border-radius: 4px;
             border: 1px solid transparent;
         }
+
         .lang-switch-btn.active {
             border-color: var(--brand-green);
             font-weight: bold;
         }
-        
-        input, select {
+
+        input,
+        select {
             border: 1px solid #e5e7eb;
             transition: border-color 0.2s;
         }
-        input:focus, select:focus {
+
+        input:focus,
+        select:focus {
             border-color: var(--brand-green);
             outline: none;
             box-shadow: 0 0 0 2px rgba(45, 90, 39, 0.1);
         }
     </style>
 </head>
+
 <body class="overflow-x-hidden">
 
     <!-- Navigation -->
@@ -73,15 +86,17 @@
                 </div>
                 <span class="text-xl md:text-2xl font-bold text-brand-green tracking-tight">The Linguist Corner</span>
             </div>
-            
+
             <div class="hidden lg:flex items-center gap-6 font-medium">
                 <a href="#home" class="hover:text-brand-green transition" data-key="nav-home">الرئيسية</a>
                 <a href="#courses" class="hover:text-brand-green transition" data-key="nav-courses">اللغات</a>
-                <a href="#register-section" class="hover:text-brand-green transition" data-key="nav-register-link">الانضمام للاكاديمية</a>
+                <a href="#register-section" class="hover:text-brand-green transition"
+                    data-key="nav-register-link">الانضمام للاكاديمية</a>
                 <a href="#booking" class="hover:text-brand-green transition" data-key="nav-booking">حجز موعد</a>
-                
+
                 <!-- Phone Number in Menu -->
-                <a href="tel:0774068300" class="flex items-center gap-2 text-brand-green bg-brand-light-green/30 px-4 py-2 rounded-full font-bold border border-brand-green/20">
+                <a href="tel:0774068300"
+                    class="flex items-center gap-2 text-brand-green bg-brand-light-green/30 px-4 py-2 rounded-full font-bold border border-brand-green/20">
                     <i class="fas fa-phone-alt"></i>
                     <span dir="ltr">0774068300</span>
                 </a>
@@ -104,26 +119,37 @@
     <section id="home" class="relative min-h-[85vh] flex items-center bg-brand-light-green/20 overflow-hidden">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center py-12">
             <div class="space-y-8 z-10">
-                <div class="inline-block bg-white px-4 py-1 rounded-full text-brand-green font-bold text-sm mb-4 border border-brand-green/10" data-key="hero-badge">
+                <div class="inline-block bg-white px-4 py-1 rounded-full text-brand-green font-bold text-sm mb-4 border border-brand-green/10"
+                    data-key="hero-badge">
                     مرحباً بكم في زاوية اللغويين
                 </div>
                 <h1 class="text-5xl md:text-7xl font-bold text-brand-green leading-tight" data-key="hero-title">
                     تعلم لغات العالم <br><span class="text-black/70">بأسلوب عصري</span>
                 </h1>
                 <p class="text-lg text-gray-600 max-w-lg leading-relaxed" data-key="hero-desc">
-                    منصة تعليمية متكاملة تهدف لتمكينك من التحدث بطلاقة في الإنجليزية، الفرنسية، والعربية بأحدث الأساليب العالمية.
+                    منصة تعليمية متكاملة تهدف لتمكينك من التحدث بطلاقة في الإنجليزية، الفرنسية، والعربية بأحدث الأساليب
+                    العالمية.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <button onclick="scrollToId('register-section')" class="btn-primary px-8 py-4 rounded-xl text-lg font-bold shadow-lg" data-key="hero-btn-reg">سجل معلوماتك الآن</button>
-                    <button onclick="scrollToId('booking')" class="bg-white text-brand-green border-2 border-brand-green px-8 py-4 rounded-xl text-lg font-bold hover:bg-brand-green hover:text-white transition-all" data-key="hero-btn-book">احجز استشارة</button>
+                    <button onclick="scrollToId('register-section')"
+                        class="btn-primary px-8 py-4 rounded-xl text-lg font-bold shadow-lg" data-key="hero-btn-reg">سجل
+                        معلوماتك الآن</button>
+                    <button onclick="scrollToId('booking')"
+                        class="bg-white text-brand-green border-2 border-brand-green px-8 py-4 rounded-xl text-lg font-bold hover:bg-brand-green hover:text-white transition-all"
+                        data-key="hero-btn-book">احجز استشارة</button>
                 </div>
             </div>
             <div class="relative">
                 <div class="w-full h-[500px] bg-white rounded-[40px] shadow-2xl overflow-hidden transform rotate-2">
-                    <img src="https://images.unsplash.com/photo-1543269664-76bc3997d9ea?q=80&w=1470&auto=format&fit=crop" alt="Language Academy" class="w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1543269664-76bc3997d9ea?q=80&w=1470&auto=format&fit=crop"
+                        alt="Language Academy" class="w-full h-full object-cover">
                 </div>
-                <div class="absolute -top-10 -right-10 w-40 h-40 bg-brand-light-green rounded-full -z-10 blur-3xl opacity-50"></div>
-                <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-brand-green rounded-full -z-10 blur-3xl opacity-20"></div>
+                <div
+                    class="absolute -top-10 -right-10 w-40 h-40 bg-brand-light-green rounded-full -z-10 blur-3xl opacity-50">
+                </div>
+                <div
+                    class="absolute -bottom-10 -left-10 w-60 h-60 bg-brand-green rounded-full -z-10 blur-3xl opacity-20">
+                </div>
             </div>
         </div>
     </section>
@@ -131,24 +157,30 @@
     <!-- Registration Section (System 1: Data Collection) -->
     <section id="register-section" class="py-24 bg-white">
         <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto bg-brand-beige rounded-[3rem] p-8 md:p-16 shadow-xl border border-brand-green/5">
+            <div
+                class="max-w-4xl mx-auto bg-brand-beige rounded-[3rem] p-8 md:p-16 shadow-xl border border-brand-green/5">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold text-brand-green mb-4" data-key="reg-title">طلب الانضمام للأكاديمية</h2>
-                    <p class="text-gray-600" data-key="reg-subtitle">املأ بياناتك لنتعرف عليك ونوفر لك العروض والبرامج المناسبة لمستواك</p>
+                    <h2 class="text-4xl font-bold text-brand-green mb-4" data-key="reg-title">طلب الانضمام للأكاديمية
+                    </h2>
+                    <p class="text-gray-600" data-key="reg-subtitle">املأ بياناتك لنتعرف عليك ونوفر لك العروض والبرامج
+                        المناسبة لمستواك</p>
                 </div>
-                
+
                 <form onsubmit="handleSubmit(event, 'registration')" class="grid md:grid-cols-2 gap-6">
                     <div class="space-y-1">
                         <label class="font-bold text-sm block px-2" data-key="form-name">الاسم الكامل</label>
-                        <input type="text" name="name" required class="w-full p-4 rounded-2xl bg-white" placeholder="أدخل اسمك الثلاثي">
+                        <input type="text" name="name" required class="w-full p-4 rounded-2xl bg-white"
+                            placeholder="أدخل اسمك الثلاثي">
                     </div>
                     <div class="space-y-1">
                         <label class="font-bold text-sm block px-2" data-key="form-email">البريد الإلكتروني</label>
-                        <input type="email" name="email" required class="w-full p-4 rounded-2xl bg-white" placeholder="example@mail.com">
+                        <input type="email" name="email" required class="w-full p-4 rounded-2xl bg-white"
+                            placeholder="example@mail.com">
                     </div>
                     <div class="space-y-1">
                         <label class="font-bold text-sm block px-2" data-key="form-phone">رقم الهاتف</label>
-                        <input type="tel" name="phone" required class="w-full p-4 rounded-2xl bg-white" placeholder="07XXXXXXXX">
+                        <input type="tel" name="phone" required class="w-full p-4 rounded-2xl bg-white"
+                            placeholder="07XXXXXXXX">
                     </div>
                     <div class="space-y-1">
                         <label class="font-bold text-sm block px-2" data-key="form-level">المستوى الحالي</label>
@@ -159,21 +191,26 @@
                         </select>
                     </div>
                     <div class="md:col-span-2 space-y-3">
-                        <label class="font-bold text-sm block px-2" data-key="form-langs">اللغات المهتم بتعلمها (يمكنك اختيار أكثر من لغة)</label>
+                        <label class="font-bold text-sm block px-2" data-key="form-langs">اللغات المهتم بتعلمها (يمكنك
+                            اختيار أكثر من لغة)</label>
                         <div class="flex flex-wrap gap-4 p-4 bg-white/50 rounded-2xl">
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="en" class="w-5 h-5 accent-brand-green"> <span data-key="lang-en">الإنجليزية</span>
+                                <input type="checkbox" value="en" class="w-5 h-5 accent-brand-green"> <span
+                                    data-key="lang-en">الإنجليزية</span>
                             </label>
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="fr" class="w-5 h-5 accent-brand-green"> <span data-key="lang-fr">الفرنسية</span>
+                                <input type="checkbox" value="fr" class="w-5 h-5 accent-brand-green"> <span
+                                    data-key="lang-fr">الفرنسية</span>
                             </label>
                             <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" value="ar" class="w-5 h-5 accent-brand-green"> <span data-key="lang-ar">العربية</span>
+                                <input type="checkbox" value="ar" class="w-5 h-5 accent-brand-green"> <span
+                                    data-key="lang-ar">العربية</span>
                             </label>
                         </div>
                     </div>
                     <div class="md:col-span-2 pt-4">
-                        <button type="submit" class="w-full btn-primary py-5 rounded-2xl text-xl font-bold" data-key="form-btn-reg">إرسال طلب الانضمام</button>
+                        <button type="submit" class="w-full btn-primary py-5 rounded-2xl text-xl font-bold"
+                            data-key="form-btn-reg">إرسال طلب الانضمام</button>
                     </div>
                 </form>
             </div>
@@ -183,24 +220,28 @@
     <!-- Booking Section (System 2: Appointment Booking) -->
     <section id="booking" class="py-24 bg-brand-green overflow-hidden relative">
         <!-- Decoration Icons -->
-        <i class="fas fa-calendar-alt absolute top-10 right-10 text-white/5 text-[200px] -rotate-12 pointer-events-none"></i>
-        
+        <i
+            class="fas fa-calendar-alt absolute top-10 right-10 text-white/5 text-[200px] -rotate-12 pointer-events-none"></i>
+
         <div class="container mx-auto px-6 relative z-10">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="text-white">
                     <h2 class="text-5xl font-bold mb-8" data-key="book-title">احجز موعد استشارة مجانية</h2>
                     <p class="text-xl opacity-80 mb-10 leading-relaxed" data-key="book-desc">
-                        احجز جلسة قصيرة مع مستشار أكاديمي لمناقشة أهدافك واختيار الدورة المناسبة لجدولك الزمني وميزانيتك.
+                        احجز جلسة قصيرة مع مستشار أكاديمي لمناقشة أهدافك واختيار الدورة المناسبة لجدولك الزمني
+                        وميزانيتك.
                     </p>
                     <div class="space-y-6">
                         <div class="flex items-center gap-5">
-                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-yellow-400">
+                            <div
+                                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-yellow-400">
                                 <i class="fas fa-clock"></i>
                             </div>
                             <span class="text-lg" data-key="book-tip-1">استشارات متاحة طوال الأسبوع</span>
                         </div>
                         <div class="flex items-center gap-5">
-                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-yellow-400">
+                            <div
+                                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-yellow-400">
                                 <i class="fas fa-video"></i>
                             </div>
                             <span class="text-lg" data-key="book-tip-2">جلسات عبر الإنترنت (Zoom/Meet)</span>
@@ -210,9 +251,15 @@
 
                 <div class="bg-white p-10 rounded-[3rem] shadow-2xl">
                     <form onsubmit="handleSubmit(event, 'booking')" class="space-y-6">
-                        <h3 class="text-2xl font-bold text-brand-green text-center mb-6" data-key="book-form-subtitle">تفاصيل الموعد</h3>
+                        <h3 class="text-2xl font-bold text-brand-green text-center mb-6" data-key="book-form-subtitle">
+                            تفاصيل الموعد</h3>
                         <div>
-                            <label class="block mb-2 font-bold text-gray-700" data-key="form-date">اختر التاريخ المفضل</label>
+                            <label class="block mb-2 font-bold text-gray-700" data-key="form-name">الاسم الكامل</label>
+                            <input type="text" required class="w-full p-4 rounded-xl border border-gray-100 bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block mb-2 font-bold text-gray-700" data-key="form-date">اختر التاريخ
+                                المفضل</label>
                             <input type="date" required class="w-full p-4 rounded-xl border border-gray-100 bg-gray-50">
                         </div>
                         <div>
@@ -224,14 +271,16 @@
                             </select>
                         </div>
                         <div>
-                            <label class="block mb-2 font-bold text-gray-700" data-key="form-lang-select">اللغة المطلوبة للاستشارة</label>
+                            <label class="block mb-2 font-bold text-gray-700" data-key="form-lang-select">اللغة المطلوبة
+                                للاستشارة</label>
                             <select class="w-full p-4 rounded-xl border border-gray-100 bg-gray-50">
                                 <option data-key="lang-en">الإنجليزية</option>
                                 <option data-key="lang-fr">الفرنسية</option>
                                 <option data-key="lang-ar">العربية</option>
                             </select>
                         </div>
-                        <button type="submit" class="w-full btn-primary py-5 rounded-2xl text-lg font-bold" data-key="form-btn-book">تأكيد حجز الموعد</button>
+                        <button type="submit" class="w-full btn-primary py-5 rounded-2xl text-lg font-bold"
+                            data-key="form-btn-book">تأكيد حجز الموعد</button>
                     </form>
                 </div>
             </div>
@@ -240,7 +289,8 @@
 
     <!-- Success Notification -->
     <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 z-[1000] hidden">
-        <div class="bg-white border-b-4 border-brand-green p-6 rounded-2xl shadow-2xl flex items-center gap-4 min-w-[320px]">
+        <div
+            class="bg-white border-b-4 border-brand-green p-6 rounded-2xl shadow-2xl flex items-center gap-4 min-w-[320px]">
             <div class="w-12 h-12 bg-brand-light-green rounded-full flex items-center justify-center text-brand-green">
                 <i class="fas fa-check text-2xl"></i>
             </div>
@@ -392,7 +442,7 @@
             currentLang = lang;
             document.documentElement.lang = lang;
             document.documentElement.dir = translations[lang].dir;
-            
+
             document.querySelectorAll('[data-key]').forEach(el => {
                 const key = el.getAttribute('data-key');
                 if (translations[lang][key]) {
@@ -425,7 +475,7 @@
 
             toast.classList.remove('hidden');
             toast.style.display = 'block';
-            
+
             setTimeout(() => {
                 toast.style.display = 'none';
                 toast.classList.add('hidden');
@@ -450,4 +500,5 @@
         window.onload = () => setLanguage('ar');
     </script>
 </body>
+
 </html>
